@@ -12,7 +12,10 @@
       </p>
     </figure> -->
   <!--   </nuxt-link> -->
-  <figure class="flex-none slide">
+  <!-- <figure class="flex-none slide"> -->
+  <nuxt-link
+    :to="articleLink"
+    class="flex-none slide">
     <img :src="articleContent.thumbnail.filename" alt="another">
 
     <div class="slide__overlay">
@@ -23,7 +26,8 @@
         {{ articleContent.intro }}
       </div>
     </div>
-  </figure>
+  </nuxt-link>
+  <!-- </figure> -->
 </template>
 
 <script>
