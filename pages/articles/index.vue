@@ -4,8 +4,8 @@
       Articles Overview
     </h2>
     {{ articles }}
-    <ul class="flex py-6 mb-6">
-      <li
+    <section class="flex py-6 mb-6">
+      <div
         v-for="article in stories"
         :key="article._uid"
         class="flex-auto px-6"
@@ -19,8 +19,8 @@
         <p v-else class="px-4 py-2 text-white bg-red-700 text-center rounded">
           This content loads on save. <strong>Save the entry & reload.</strong>
         </p>
-      </li>
-    </ul>
+      </div>
+    </section>
   </section>
 </template>
 
