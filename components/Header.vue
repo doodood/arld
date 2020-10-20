@@ -1,5 +1,5 @@
 <template>
-  <header class="max-w-5xl mx-auto py-8 flex">
+  <header class="app-header">
     <nav>
       <ul>
         <li>
@@ -18,10 +18,10 @@
         </li>
       </ul>
     </nav>
-    <!-- <div class="flex-1">
-      <a href="/" class="block w-56 mx-auto">
-        <img src="http://a.storyblok.com/f/42016/1096x313/0353bf6654/logo2.png">
-      </a>
-    </div> -->
   </header>
 </template>
+<style lang="scss">
+  a:visited,a:link {
+    color: black;
+  }
+</style>

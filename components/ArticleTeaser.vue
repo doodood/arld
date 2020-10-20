@@ -16,7 +16,7 @@
   <nuxt-link
     :to="articleLink"
     class="flex-none slide">
-    <img :src="articleContent.thumbnail.filename" alt="another">
+    <img v-lazy="articleContent.thumbnail.filename" alt="another">
 
     <div class="slide__overlay">
       <h4 class="slide__overlay__title">
@@ -55,7 +55,7 @@ export default {
     object-fit: cover;
      width: 70%;
      position: relative;
-  background-color: purple;
+  //background-color: purple;
   border:1px solid white;
   //width: 300px;
   & > img {
@@ -74,17 +74,6 @@ export default {
         transform: scale(1);
     }
     &__overlay {
-        /* opacity: 0;
-        transition: all .7s;
-        background-color: purple;
-        line-height: normal;
-        color: white;
-        margin: 0 auto;
-        white-space: pre-wrap;
-        position: absolute;
-        width: 100%;
-        height: 18rem;
-        bottom: 0; */
         opacity: 0;
         transition: all .7s;
         background-color: purple;

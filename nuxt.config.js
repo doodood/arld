@@ -23,14 +23,17 @@ export default {
     /*
      ** Global CSS
      */
-    css: [],
+    css: [
+        '~/assets/sass/main.scss'
+    ],
     /*
      ** Plugins to load before mounting the App
      */
     plugins: [
         '~/plugins/components',
         '~/plugins/composition-api.js',
-        '~/plugins/storyblok-rich-text-renderer.js'
+        '~/plugins/storyblok-rich-text-renderer.js',
+        '~/plugins/vue-lazyload.js'
     ],
     /*
      ** Nuxt.js dev-modules

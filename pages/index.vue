@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="app-section">
     <component
       :is="story.content.component"
       v-if="story.content.component"
@@ -61,3 +61,22 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+/* .page-enter-active, .page-leave-active {
+  transition: opacity  .5s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+ */
+.page-leave-active,
+.page-enter-active {
+  transition: .5s;
+}
+.page-enter {
+  transform: translate(100%, 0);
+}
+.page-leave-to {
+  transform: translate(-100%, 0);
+}
+</style>

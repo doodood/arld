@@ -1,6 +1,6 @@
 <template>
   <div v-editable="blok">
-    <h2 class="pt-2 pl-6 text-lg text-gray-700 italic">
+    <h2 class="pl-6 text-lg text-gray-700 italic">
       {{ blok.title }}
     </h2>
     <div class="flex-container">
@@ -47,71 +47,13 @@ export default {
   margin: 0 auto;
   grid-template-rows: 85vh repeat(3, min-content);
 }
-/* section {
-  //background-color: orangered;
-  grid-column: full-start / full-end;
-  display: flex;
-  height: 85vh;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-} */
+
 .flex{
   grid-column: full-start / full-end;
-  //display: flex;
   height: 85vh;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
 
 }
-/* .flex-dood{
-    //grid-column: full-start / full-end;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-.slide {
-    position: relative;
-    object-fit: cover;
-    width: 100%;
-    &>img {
-        transform: scale(1);
-        object-fit: fill;
-        height: 100%;
-        width: fit-content;
-    }
-    &:hover &__overlay {
-        opacity: 1;
-    }
-    &:hover>img {
-        filter: brightness(50%);
-        transform: scale(1);
-    }
-    &__overlay {
-        opacity: 0;
-        transition: all .7s;
-        background-color: purple;
-        line-height: normal;
-        color: white;
-        margin: 0 auto;
-        white-space: pre-wrap;
-        position: absolute;
-        width: 100%;
-        height: 18rem;
-        bottom: 0;
-        &__title {
-            font-size: 2rem;
-            text-align: center;
-            margin: 3vh;
-        }
-        &__text {
-            font-size: 1.8rem;
-            white-space: pre-line;
-            text-align: center;
-            line-height: 1.9rem;
-            margin: 2rem;
-        }
-    }
-} */
 </style>

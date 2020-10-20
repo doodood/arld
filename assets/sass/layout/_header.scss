@@ -1,0 +1,9 @@
+.app-header {
+    background-color: $color-primary-dark-4;
+    padding: 1rem;
+    grid-column: 1/-1;
+    a:visited,
+    a:link {
+        color: white;
+    }
+}

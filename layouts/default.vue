@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="app-container">
     <Header />
     <nuxt />
     <Footer />
   </div>
 </template>
 
-<style>
+<style lang="scss">
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -51,7 +51,30 @@ html {
 }
 
 .button--grey:hover {
-  color: #fff;
+  //color: #fff;
   background-color: #35495e;
+}
+.app-container {
+    display: grid;
+    grid-template-columns: [full-start] minmax(1fr, 1fr) [dood-start] repeat( 8, [col-start] minmax(min-content, 14rem) [col-end]) [dood-end] minmax(6rem, 1fr) [full-end];
+    margin: 0 auto;
+    /* grid-template-rows: 95vh repeat(3, min-content); */
+    grid-template-rows: 10vh repeat(3, min-content);
+    //grid-gap: 10px;
+    grid-auto-rows: min-content minmax(100px, auto);
+
+    /* .app-header {
+      grid-column: 1/-1;
+      background-color: transparent;
+      color: black;
+    } */
+    .app-section {
+       grid-column: 1/-1;
+    }
+    .app-footer {
+       grid-column: 1/-1;
+       /* background-color: $color-primary-dark-4; */
+       //grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
 }
 </style>
