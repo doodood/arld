@@ -1,3 +1,4 @@
+//import tachyons from 'tachyons/css/tachyons'
 export default {
     /*
      ** Headers of the page
@@ -24,7 +25,8 @@ export default {
      ** Global CSS
      */
     css: [
-        '~/assets/sass/main.scss'
+        '~/assets/sass/main.scss',
+        'tachyons/css/tachyons.min.css'
     ],
     /*
      ** Plugins to load before mounting the App

@@ -1,6 +1,6 @@
 <template>
   <section class="app-section">
-    <Article :blok="story.content" />
+    <Article :blok="story.content" :thumbnail="story.content.thumbnail" />
   </section>
 </template>
 
